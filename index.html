@@ -3,7 +3,17 @@
 <head>
     <link rel="shortcut icon" href="vtarc.ico"/>
     <title> Burunyu~~~~ </title>
-    <script type="text/javascript" src="sound-onclick.js"></script>
+    <script type="text/javascript">
+        function playSound(el,soundfile) {
+            if (el.mp3) {
+                if(el.mp3.paused) el.mp3.play();
+                else el.mp3.pause();
+            } else {
+                el.mp3 = new Audio(soundfile);
+                el.mp3.play();
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -12,16 +22,11 @@
 <img src="ncarcPNG.png" alt="Neco Arc">
 <img src="iambraindead.jpg" alt="I need a fucking girlfriend">
 -->
+<span id="dummy" onclick="playSound(this, 'burunyu.mp3');">
+    <img src="vtarcPNG.png" name="cringe"/>
+</span>
 
-<a href="javascript:playclip();"><img src="vtarcPNG.png" alt="Click for Sound"></a><br>
-<a href="javascript:playclip();"><img src="ncarcPNG.png" alt="Click for Sound"></a><br>
-<a href="javascript:playclip();"><img src="iambraindead.jpg" alt="Click for Sound"></a><br>
-<p> I love neco arc!!!!!!!</p>
-
-<audio>
-    <source src="click.mp3" type="audio/mpeg">
-</audio>
-<div id="sounddiv"><bgsound id="sound"></div>
+<p> I love neco arc please work!!!!!!!</p>
 
 </body>
 </html>
