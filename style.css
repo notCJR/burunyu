@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Comic sans";
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body{
     overflow: hidden;
     background: rgb(60, 60, 242);
     background: url('lifeisapart.jpg');
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .mainbox{
