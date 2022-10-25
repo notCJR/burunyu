@@ -54,7 +54,7 @@ span{
   .span1{
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
     background-color: #fffb00;
-    top: 12px;
+    top: 120px;
     left: 0;
 }
   .span2{
@@ -95,7 +95,7 @@ span{
 }
  
 span b{
-   font-size: 24px;
+   font-size: 12px;
    position: absolute;
    top: 50%;
    left: 50%;
